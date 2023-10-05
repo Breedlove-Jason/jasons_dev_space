@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   HomeScroll,
   HomeScrollButton,
@@ -8,9 +9,11 @@ import {
 function ScrollDownIcon() {
   return (
     <HomeScroll>
+        <Link to={"about"}>
       <HomeScrollButton href="#about">
         <StyledMouseIcon />
       </HomeScrollButton>
+        </Link>
     </HomeScroll>
   );
 }
