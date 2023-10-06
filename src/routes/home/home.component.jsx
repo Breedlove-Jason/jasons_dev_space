@@ -1,6 +1,7 @@
 import React, { useEffect, useState, Fragment } from "react";
 import SocialIcons from "../../components/social-media/social-media.component";
 import ScrollDownIcon from "../../components/scroll-down-icon/scroll-down-icon.component";
+import ContactButton from "../../components/contact-button/contact-button.component";
 import "../../assets/css/styles.css";
 
 function Home() {
@@ -54,13 +55,14 @@ function Home() {
                 software development. Once a military Sergeant who fought with
                 valor during the Iraq war, now a computer programmer.
               </h3>
+              <ContactButton />
+              <ScrollDownIcon />
             </div>
             <div className="home__social">
               <SocialIcons />
             </div>
           </div>
         </div>
-        <ScrollDownIcon />
       </section>
     </Fragment>
   );
