@@ -2,6 +2,7 @@ import React, { useEffect, useState, Fragment } from "react";
 import SocialIcons from "../../components/social-media/social-media.component";
 import ScrollDownIcon from "../../components/scroll-down-icon/scroll-down-icon.component";
 import ContactButton from "../../components/contact-button/contact-button.component";
+import About from "../about/about.component";
 import "../../assets/css/styles.css";
 
 function Home() {
@@ -64,6 +65,7 @@ function Home() {
           </div>
         </div>
       </section>
+      <About />
     </Fragment>
   );
 }
