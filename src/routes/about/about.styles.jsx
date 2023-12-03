@@ -11,7 +11,7 @@ export const StyledSectionTitle = styled.h2`
   font-size: 3rem;
   font-family: "Maven Pro", sans-serif;
   text-align: center;
-  padding-bottom: 15px;
+  padding-bottom: 50px;
 `;
 
 export const StyledAboutContainer = styled.div`

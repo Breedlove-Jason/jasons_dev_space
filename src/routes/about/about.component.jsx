@@ -22,13 +22,17 @@ const About = () => {
           <ProfileImage />
           <div className="about__data">
             <StyledAboutDescription id={"home-about"}>
-              {/*<p className="about__description" id="home-about">*/}
-              Full-Stack Web developer with extensive knowledge of software
-              development and computer security. Working in the technology field
-              since 2004. “Highly decorated Soldier with impressive technology
-              experience.” Currently, medically retired from the U.S. Army since
-              2009 as a 100% rated disabled veteran.
-              {/*</p>*/}
+              As an accomplished Full-Stack Web Developer, I possess extensive
+              experience in software development and a robust background in
+              computer security, with my career in technology beginning in 2004.
+              My journey has been enriched by my time in the U.S. Army, where I
+              developed key skills in leadership and technology, earning
+              recognition as a highly decorated soldier. After medically
+              retiring as a 100% rated disabled veteran in 2009, I've dedicated
+              myself to advancing in the field of web development. My approach
+              combines technical proficiency with the discipline and resilience
+              honed in the military, enabling me to deliver innovative and
+              reliable web solutions.
             </StyledAboutDescription>
             <div className="intro__bullets">
               <h2>COMMENTS FROM MILITARY SUPERIORS</h2>
