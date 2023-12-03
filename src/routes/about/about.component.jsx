@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import "./about.styles";
 import ProfileImage from "../../profile-image/profile-image.component";
+import CommentsFromSuperiors from "../../components/supervisor-comments/CommentsFromSuperiors";
 import "../../assets/css/styles.css";
 import {
   StyledAboutDescription,
@@ -35,21 +36,22 @@ const About = () => {
               reliable web solutions.
             </StyledAboutDescription>
             <div className="intro__bullets">
-              <h2>COMMENTS FROM MILITARY SUPERIORS</h2>
-              <ul>
-                <li>
-                  “Unlimited potential; possesses the strength to be one of
-                  tomorrow’s leaders.”
-                </li>
-                <li>
-                  “Displays unique and rare talent; exceptionally well organized
-                  and very perceptive.”
-                </li>
-                <li>
-                  “Effectively manages and adapts to stressful situations;
-                  maintains military bearing under extreme pressure.”
-                </li>
-              </ul>
+              <CommentsFromSuperiors />
+              {/*<h2>COMMENTS FROM MILITARY SUPERIORS</h2>*/}
+              {/*<ul>*/}
+              {/*  <li>*/}
+              {/*    “Unlimited potential; possesses the strength to be one of*/}
+              {/*    tomorrow’s leaders.”*/}
+              {/*  </li>*/}
+              {/*  <li>*/}
+              {/*    “Displays unique and rare talent; exceptionally well organized*/}
+              {/*    and very perceptive.”*/}
+              {/*  </li>*/}
+              {/*  <li>*/}
+              {/*    “Effectively manages and adapts to stressful situations;*/}
+              {/*    maintains military bearing under extreme pressure.”*/}
+              {/*  </li>*/}
+              {/*</ul>*/}
             </div>
             <div className="intro__bullets">
               <h2>AWARDS AND DECORATIONS:</h2>
