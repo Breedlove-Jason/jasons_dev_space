@@ -1,30 +1,35 @@
 import React, { Fragment } from "react";
 import "./about.styles";
+import ProfileImage from "../../profile-image/profile-image.component";
+import "../../assets/css/styles.css";
 import {
+  StyledAboutDescription,
   StyledAbout,
   StyledSectionTitle,
-  StyledContainer,
-  StyledProfileImage,
-  StyledGrid,
+  StyledAboutContainer,
 } from "./about.styles";
-import ProfileImage from "../../profile-image/profile-image.component";
 
 const About = () => {
   return (
     <Fragment>
-      <StyledAbout id="about">
-        <StyledSectionTitle>About Jason...</StyledSectionTitle>
-        <span className="section__subtitle"> </span>
-        <div className="about__container container grid">
+      {/*<section className="about section" id="about">*/}
+      <StyledAbout id={"about"}>
+        {/*<h2 className="section__title">About</h2>*/}
+        {/*<span className="section__subtitle"> </span>*/}
+        <StyledSectionTitle>About</StyledSectionTitle>
+        {/*<div className="about__container container grid">*/}
+        <StyledAboutContainer>
           <ProfileImage />
           <div className="about__data">
-            <p className="about__description" id="home-about">
+            <StyledAboutDescription id={"home-about"}>
+              {/*<p className="about__description" id="home-about">*/}
               Full-Stack Web developer with extensive knowledge of software
               development and computer security. Working in the technology field
               since 2004. “Highly decorated Soldier with impressive technology
               experience.” Currently, medically retired from the U.S. Army since
               2009 as a 100% rated disabled veteran.
-            </p>
+              {/*</p>*/}
+            </StyledAboutDescription>
             <div className="intro__bullets">
               <h2>COMMENTS FROM MILITARY SUPERIORS</h2>
               <ul>
@@ -53,7 +58,28 @@ const About = () => {
               </ul>
             </div>
           </div>
-        </div>
+
+          <div className="about__info">
+            {/*  <div>*/}
+            {/*    <span className="about__info-title"> 01+ </span>*/}
+            {/*    <span className="about__info-name"> Years <br> Experience </span>*/}
+            {/*  </div>*/}
+
+            {/*  <div>*/}
+            {/*    <span className="about__info-title"> 10+ </span>*/}
+            {/*    <span className="about__info-name"> Completed <br> Projects </span>*/}
+            {/*  </div>*/}
+
+            {/*  <div>*/}
+            {/*    <span className="about__info-title"> 02+ </span>*/}
+            {/*    <span className="about__info-name"> Companies <br> Worked</span>*/}
+            {/*  </div>*/}
+          </div>
+
+          <div className="about__buttons"></div>
+        </StyledAboutContainer>
+        {/*</div>*/}
+        {/*</section>*/}
       </StyledAbout>
     </Fragment>
   );

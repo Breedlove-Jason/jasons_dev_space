@@ -1,14 +1,35 @@
 import styled from "styled-components";
+import "../../assets/css/styles.css";
 
 export const StyledAbout = styled.section`
+  padding-top: 1rem;
+  margin-top: 7rem;
   /* Placeholder if there's any direct style for .about */
 `;
 
 export const StyledSectionTitle = styled.h2`
-  font-size: var(--h2-font-size);
-  margin-bottom: var(--mb-2-5);
-  color: var(--title-color);
-  font-weight: var(--font-semi-bold);
+  font-size: 3rem;
+  font-family: "Maven Pro", sans-serif;
+  text-align: center;
+  padding-bottom: 15px;
+`;
+
+export const StyledAboutContainer = styled.div`
+  grid-template-columns: repeat(1, 1fr);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-right: auto;
+  display: grid;
+`;
+
+export const StyledAboutDescription = styled.p`
+  width: 100%;
+  max-width: 768px; /* Adjust as needed */
+  margin: auto auto 2.5rem auto;
+  padding-top: 3rem;
+  text-align: left;
+  color: var(--text-color);
+  font-size: 1.25rem;
 `;
 
 export const StyledContainer = styled.div`
@@ -22,10 +43,10 @@ export const StyledGrid = styled.div`
   gap: 1.5rem;
 `;
 
-export const StyledProfileImage = styled.img`
-  width: 300px;
-  border-radius: 0.5rem;
-  align-self: center;
-  justify-self: center;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
-`;
+// export const StyledProfileImage = styled.img`
+//   width: 300px;
+//   border-radius: 0.5rem;
+//   align-self: center;
+//   justify-self: center;
+//   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+// `;

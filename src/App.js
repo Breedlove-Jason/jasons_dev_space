@@ -6,6 +6,7 @@ import Projects from "../src/routes/projects/projects.component";
 import Contact from "../src/routes/contact/contact.component";
 import Skills from "../src/routes/skills/skills.component";
 import GlobalStyles from "./GlobalStyles";
+import "../src/assets/css/styles.css";
 
 function App() {
   return (
