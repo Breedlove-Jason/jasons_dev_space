@@ -1,7 +1,7 @@
 import React from "react";
-import { StyledCommentsSection, StyledComment } from "./CommentStyles"; // Adjust the import path as needed
+import { StyledCommentsSection, StyledComment } from "./comment.styles"; // Adjust the import path as needed
 
-const CommentsFromSuperiors = () => {
+const CommentsFromSuperiorsComponent = () => {
   return (
     <StyledCommentsSection>
       <h2>COMMENTS FROM MILITARY SUPERIORS</h2>
@@ -23,4 +23,4 @@ const CommentsFromSuperiors = () => {
   );
 };
 
-export default CommentsFromSuperiors;
+export default CommentsFromSuperiorsComponent;

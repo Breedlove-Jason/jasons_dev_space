@@ -1,7 +1,8 @@
 import React, { Fragment } from "react";
 import "./about.styles";
 import ProfileImage from "../../profile-image/profile-image.component";
-import CommentsFromSuperiors from "../../components/supervisor-comments/CommentsFromSuperiors";
+import CommentsFromSuperiorsComponent from "../../components/supervisor-comments/comments-from-superiors.component";
+import AwardsAndDecorationsComponent from "../../components/awards-and-decorations/awards-and-decorations.component";
 import "../../assets/css/styles.css";
 import {
   StyledAboutDescription,
@@ -35,34 +36,8 @@ const About = () => {
               honed in the military, enabling me to deliver innovative and
               reliable web solutions.
             </StyledAboutDescription>
-            <div className="intro__bullets">
-              <CommentsFromSuperiors />
-              {/*<h2>COMMENTS FROM MILITARY SUPERIORS</h2>*/}
-              {/*<ul>*/}
-              {/*  <li>*/}
-              {/*    “Unlimited potential; possesses the strength to be one of*/}
-              {/*    tomorrow’s leaders.”*/}
-              {/*  </li>*/}
-              {/*  <li>*/}
-              {/*    “Displays unique and rare talent; exceptionally well organized*/}
-              {/*    and very perceptive.”*/}
-              {/*  </li>*/}
-              {/*  <li>*/}
-              {/*    “Effectively manages and adapts to stressful situations;*/}
-              {/*    maintains military bearing under extreme pressure.”*/}
-              {/*  </li>*/}
-              {/*</ul>*/}
-            </div>
-            <div className="intro__bullets">
-              <h2>AWARDS AND DECORATIONS:</h2>
-              <ul>
-                <li>
-                  Awarded the Army Commendation Medal with Valor for bravery in
-                  action, the Combat Action Badge, the Army Achievement Medal,
-                  and the Presidential Unit Citation.
-                </li>
-              </ul>
-            </div>
+            <CommentsFromSuperiorsComponent />
+            <AwardsAndDecorationsComponent />
           </div>
 
           <div className="about__info">
