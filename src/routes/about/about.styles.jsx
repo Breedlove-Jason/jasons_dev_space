@@ -13,6 +13,7 @@ export const StyledSectionTitle = styled.h2`
   font-family: "", sans-serif;
   text-align: center;
   padding-bottom: 50px;
+  padding-top: 50px;
   margin-left: 0;
 `;
 

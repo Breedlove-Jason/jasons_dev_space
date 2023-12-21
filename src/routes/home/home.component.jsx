@@ -2,6 +2,7 @@ import React, { useEffect, useState, Fragment } from "react";
 import SocialIcons from "../../components/social-media/social-media.component";
 import ScrollDownIcon from "../../components/scroll-down-icon/scroll-down-icon.component";
 import ContactButton from "../../components/contact-button/contact-button.component";
+import Experience from "../../components/experience-section/experience.component";
 import About from "../about/about.component";
 import "../../assets/css/styles.css";
 
@@ -57,6 +58,7 @@ function Home() {
                 valor during the Iraq war, now a computer programmer.
               </h3>
               <ContactButton />
+              <Experience />
               <ScrollDownIcon />
               <About />
             </div>
