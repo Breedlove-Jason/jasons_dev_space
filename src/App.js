@@ -12,6 +12,7 @@ function App() {
   return (
     <div>
       <GlobalStyles />
+      {/*<Navigation />*/}
       <Routes>
         <Route path="/" element={<Navigation />}>
           <Route index element={<Home />} />
@@ -21,7 +22,6 @@ function App() {
           <Route path="/skills" element={<Skills />} />
         </Route>
       </Routes>
-      <Navigation />
     </div>
   );
 }

@@ -3,15 +3,17 @@ import "../../assets/css/styles.css";
 
 export const StyledAbout = styled.section`
   padding-top: 1rem;
-  margin-top: 7rem;
+  position: relative;
+  //margin-top: 7rem;
   /* Placeholder if there's any direct style for .about */
 `;
 
 export const StyledSectionTitle = styled.h2`
   font-size: 3rem;
-  font-family: "Maven Pro", sans-serif;
+  font-family: "", sans-serif;
   text-align: center;
   padding-bottom: 50px;
+  margin-left: 0;
 `;
 
 export const StyledAboutContainer = styled.div`

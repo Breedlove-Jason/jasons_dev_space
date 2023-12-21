@@ -58,14 +58,13 @@ function Home() {
               </h3>
               <ContactButton />
               <ScrollDownIcon />
+              <About />
             </div>
-            <div className="home__social">
-              <SocialIcons />
-            </div>
+            <div className="home__social"></div>
+            <SocialIcons />
           </div>
         </div>
       </section>
-      <About />
     </Fragment>
   );
 }

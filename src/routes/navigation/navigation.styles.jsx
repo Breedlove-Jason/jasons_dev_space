@@ -3,10 +3,14 @@ import { Link } from "react-router-dom";
 
 export const NavigationContainer = styled.div`
   height: 70px;
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
+  position: fixed;
+  top: 0;
+  background-color: #fbfbfe; // To prevent content underneath from showing, add a background color.
+  z-index: 1; // To make sure it overlies other elements
 `;
 
 export const LogoContainer = styled(Link)`

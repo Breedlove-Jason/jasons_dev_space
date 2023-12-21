@@ -4,7 +4,7 @@ import {
   StyledAward,
   StyledMedalsBanner,
 } from "./awards.styles"; // Import the new styled component
-import medalsImage from "../../assets/images/dalle-medals.png";
+import medalsImage from "../../assets/images/medals.png";
 
 const AwardsAndDecorationsComponent = () => {
   return (
