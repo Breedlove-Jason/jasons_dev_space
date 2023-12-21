@@ -4,6 +4,7 @@ import "../../assets/css/styles.css";
 export const StyledAbout = styled.section`
   padding-top: 1rem;
   position: relative;
+  padding-left: 2rem;
   //margin-top: 7rem;
   /* Placeholder if there's any direct style for .about */
 `;
