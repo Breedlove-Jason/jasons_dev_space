@@ -4,6 +4,7 @@ import ScrollDownIcon from "../../components/scroll-down-icon/scroll-down-icon.c
 import ContactButton from "../../components/contact-button/contact-button.component";
 import Experience from "../../components/experience-section/experience.component";
 import About from "../about/about.component";
+import Skills from "../../components/skills/skills.component";
 import "../../assets/css/styles.css";
 
 function Home() {
@@ -66,6 +67,7 @@ function Home() {
             <SocialIcons />
           </div>
         </div>
+        <Skills />
       </section>
     </Fragment>
   );

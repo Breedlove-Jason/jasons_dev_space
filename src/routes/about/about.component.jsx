@@ -9,7 +9,7 @@ import {
   StyledAboutDescription,
   StyledAbout,
   StyledSectionTitle,
-  StyledAboutContainer,
+  // StyledAboutContainer,
 } from "./about.styles";
 
 const About = () => {

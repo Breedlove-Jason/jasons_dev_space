@@ -4,7 +4,7 @@ import Home from "../src/routes/home/home.component";
 import About from "../src/routes/about/about.component";
 import Projects from "../src/routes/projects/projects.component";
 import Contact from "../src/routes/contact/contact.component";
-import Skills from "../src/routes/skills/skills.component";
+// import Skills from "./components/skills/skills.component";
 import "../src/assets/css/styles.css";
 
 import GlobalStyles from "./GlobalStyles";
@@ -23,7 +23,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/skills" element={<Skills />} />
+            {/*<Route path="/skills" element={<Skills />} />*/}
           </Route>
         </Routes>
       </div>
