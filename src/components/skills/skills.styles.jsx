@@ -56,9 +56,26 @@ export const CardBack = styled.div`
 export const ImgBx = styled.div`
   width: 100px;
   height: 100px;
+  position: relative; // Ensure the positioning context for the title
   img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
+  .skill-title {
+    position: absolute;
+    font-size: 1rem;
+    font-weight: bold;
+    bottom: -20px; // Adjust as needed
+    left: 50%;
+    transform: translateX(-50%);
+    // Add the desired styling that matches the CSS title appearance
+  }
+`;
+
+export const SkillsTitle = styled.h2`
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  // Add any other styling you desire for the title
 `;

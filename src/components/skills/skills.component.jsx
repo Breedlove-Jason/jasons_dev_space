@@ -4,11 +4,12 @@ import {
   ImgBx,
   CardInner,
   CardFront,
-  CardBack,
   SkillCard,
+  SkillsTitle,
 } from "./skills.styles";
 import html5Logo from "../../assets/images/html5.svg";
-import css3Logo from "../../assets/images/css3.svg";
+// import css3Logo from "../../assets/images/css3.svg";
+import cssLogo from "../../assets/images/css3.png";
 import bootstrap5Logo from "../../assets/images/bootstrap-5.svg";
 import javascriptLogo from "../../assets/images/javascript.svg";
 import python3Logo from "../../assets/images/python.svg";
@@ -21,7 +22,7 @@ const skills = [
     name: "HTML",
   },
   {
-    img: css3Logo,
+    img: cssLogo,
     name: "CSS",
   },
   {
@@ -48,23 +49,23 @@ const skills = [
 ];
 
 const Skills = () => (
-  <SkillsContainerCard>
-    {skills.map((skill, index) => (
-      <SkillCard key={index}>
-        <CardInner>
-          <CardFront>
-            <ImgBx>
-              <img src={skill.img} alt={`${skill.name} logo`} />
-            </ImgBx>
-          </CardFront>
-          <CardBack>
-            <h2>{skill.name}</h2>
-            <p>Some additional information about the skill.</p>
-          </CardBack>
-        </CardInner>
-      </SkillCard>
-    ))}
-  </SkillsContainerCard>
+  <>
+    <SkillsTitle>My Skills</SkillsTitle>
+    <SkillsContainerCard>
+      {skills.map((skill, index) => (
+        <SkillCard key={index}>
+          <CardInner>
+            <CardFront>
+              <ImgBx>
+                <img src={skill.img} alt={`${skill.name} logo`} />
+                <span className="skill-title">{skill.name}</span>{" "}
+                {/* Add title here */}
+              </ImgBx>
+            </CardFront>
+          </CardInner>
+        </SkillCard>
+      ))}
+    </SkillsContainerCard>
+  </>
 );
-
 export default Skills;
