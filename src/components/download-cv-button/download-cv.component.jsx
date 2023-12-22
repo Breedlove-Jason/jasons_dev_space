@@ -5,7 +5,6 @@ import { Icon } from "@iconify/react";
 const DownloadCV = () => {
   return (
     <Fragment>
-      {/*<div className="about__buttons">*/}
       <StyledCVContainer>
         <a
           href="../../assets/files/2024-Resume.pdf"
@@ -13,9 +12,8 @@ const DownloadCV = () => {
           target="_blank"
           className="button button--flex"
         >
-          Download CV <Icon icon="uil:download-alt button__icon" />
+          Download CV <Icon icon="uil:download-alt" className="button__icon" />
         </a>
-        {/*</div>*/}
       </StyledCVContainer>
     </Fragment>
   );
