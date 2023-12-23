@@ -1,4 +1,5 @@
-import React, { useEffect, useState, Fragment } from "react";
+import React, { Fragment } from "react";
+import Typewriter from "../../components/typewriter/typewriter.component";
 import SocialIcons from "../../components/social-media/social-media.component";
 import ScrollDownIcon from "../../components/scroll-down-icon/scroll-down-icon.component";
 import ContactButton from "../../components/contact-button/contact-button.component";
@@ -10,39 +11,6 @@ import Qualifications from "../../components/qualifications/qualifications.compo
 import "../../assets/css/styles.css";
 
 function Home() {
-  const wordsList = [
-    "Jason Breedlove",
-    "Combat Soldier",
-    "Computer Programmer",
-    "Full-Stack Developer",
-    "Designer, Creator",
-  ];
-  const [currentWordIndex, setCurrentWordIndex] = useState(0);
-  const [currentCharIndex, setCurrentCharIndex] = useState(0);
-  const [text, setText] = useState("");
-
-  useEffect(() => {
-    if (currentCharIndex < wordsList[currentWordIndex].length) {
-      const timeoutId = setTimeout(() => {
-        setText(
-          (prevText) =>
-            prevText + wordsList[currentWordIndex][currentCharIndex],
-        );
-        setCurrentCharIndex((prevCharIndex) => prevCharIndex + 1);
-      }, 100);
-      return () => clearTimeout(timeoutId);
-    } else {
-      const timeoutId = setTimeout(() => {
-        setCurrentWordIndex(
-          (prevWordIndex) => (prevWordIndex + 1) % wordsList.length,
-        );
-        setCurrentCharIndex(0);
-        setText("");
-      }, 2000);
-      return () => clearTimeout(timeoutId);
-    }
-  }, [currentWordIndex, currentCharIndex, text]);
-
   return (
     <Fragment>
       <section className="home section" id="home">
@@ -54,7 +22,16 @@ function Home() {
                 Welcome to my Portfolio Website!{" "}
               </small>
               <h1 className="home__title"> Hey I'm </h1>
-              <div id="typewriter">{text}</div>
+              <Typewriter
+                wordsList={[
+                  "Jason Breedlove",
+                  "Combat Soldier",
+                  "Computer Programmer",
+                  "Full-Stack Developer",
+                  "Designer",
+                  "Creator",
+                ]}
+              />
               <h3 className="home__subtitle" id="home-bio">
                 A Full-Stack Developer enthusiastic about technology and
                 software development. Once a military Sergeant who fought with
