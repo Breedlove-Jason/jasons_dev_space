@@ -65,8 +65,8 @@ function Home() {
               <ScrollDownIcon />
               <About />
               <Skills />
-              <Qualifications />
             </div>
+            <Qualifications />
             <div className="home__social"></div>
             <SocialIcons />
           </div>
