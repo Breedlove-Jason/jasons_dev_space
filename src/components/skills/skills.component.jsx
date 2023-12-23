@@ -1,4 +1,5 @@
 import React from "react";
+import backToTop from "../back-to-top/backToTopButton.component";
 import {
   SkillsContainerCard,
   ImgBx,
@@ -65,6 +66,7 @@ const Skills = () => (
           </CardInner>
         </SkillCard>
       ))}
+      <BackToTop />
     </SkillsContainerCard>
   </>
 );
