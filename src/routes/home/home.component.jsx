@@ -8,11 +8,20 @@ import About from "../about/about.component";
 import Skills from "../../components/skills/skills.component";
 import BackToTop from "../../components/back-to-top/backToTopButton.component";
 import Qualifications from "../../components/qualifications/qualifications.component";
-import "../../assets/css/styles.css";
+// import "../../assets/css/styles.css";
+
+import {
+  LayoutGrid,
+  Header,
+  Footer,
+  Sidebar,
+  MainContent,
+} from "./home.styles";
 
 function Home() {
   return (
-    <Fragment>
+    <>
+      <Header>Header</Header>
       <section className="home section" id="home">
         <div className="home__container container grid">
           <div className="home__content grid">
@@ -37,20 +46,27 @@ function Home() {
                 software development. Once a military Sergeant who fought with
                 valor during the Iraq war, now a computer programmer.
               </h3>
-              <ContactButton />
-              <Experience />
-              <ScrollDownIcon />
-              <About />
-              <Skills />
+              {/*<ContactButton />*/}
+              {/*<Experience />*/}
+              {/*<ScrollDownIcon />*/}
+              {/*<About />*/}
+              {/*<Skills />*/}
             </div>
-            <Qualifications />
-            <div className="home__social"></div>
+            {/*<Qualifications />*/}
+            {/*<div className="home__social"></div>*/}
             <SocialIcons />
           </div>
         </div>
         <BackToTop />
+        <LayoutGrid>
+          Layout Grid
+          <Header>Header</Header>
+          <Sidebar>Sidebar</Sidebar>
+          <MainContent>Main Content</MainContent>
+          <Footer>Footer</Footer>
+        </LayoutGrid>
       </section>
-    </Fragment>
+    </>
   );
 }
 export default Home;
