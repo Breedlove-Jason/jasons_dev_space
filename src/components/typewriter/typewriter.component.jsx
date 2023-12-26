@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { TypewriterText } from "./typewriter.styles";
+import { TypewriterText, TypewriterContainer } from "./typewriter.styles";
 
 const Typewriter = ({ wordsList }) => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
@@ -28,7 +28,11 @@ const Typewriter = ({ wordsList }) => {
     }
   }, [currentWordIndex, currentCharIndex, text]);
 
-  return <TypewriterText>{text}</TypewriterText>;
+  return (
+    <TypewriterContainer>
+      <TypewriterText>{text}</TypewriterText>
+    </TypewriterContainer>
+  );
 };
 
 export default Typewriter;

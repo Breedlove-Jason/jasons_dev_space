@@ -21,7 +21,7 @@ import {
 function Home() {
   return (
     <>
-      <Header>Header</Header>
+      {/*<Header>Header</Header>*/}
       <section className="home section" id="home">
         <div className="home__container container grid">
           <div className="home__content grid">
@@ -54,17 +54,10 @@ function Home() {
             </div>
             {/*<Qualifications />*/}
             {/*<div className="home__social"></div>*/}
-            <SocialIcons />
+            {/*<SocialIcons />*/}
           </div>
         </div>
         <BackToTop />
-        <LayoutGrid>
-          Layout Grid
-          <Header>Header</Header>
-          <Sidebar>Sidebar</Sidebar>
-          <MainContent>Main Content</MainContent>
-          <Footer>Footer</Footer>
-        </LayoutGrid>
       </section>
     </>
   );
