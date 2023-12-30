@@ -1,5 +1,4 @@
-import styled from "styled-components";
-import "./assets/css/styles.css";
+import styled, { createGlobalStyle } from "styled-components";
 
 export const Header = styled.header`
   grid-column: 1 / -1;
@@ -21,6 +20,19 @@ export const Sidebar = styled.aside`
 export const MainContent = styled.main`
   grid-column: 2 / 4;
   border: 5px solid blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+
+  .home-contact-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
 `;
 
 export const Footer = styled.footer`
@@ -36,4 +48,10 @@ export const LayoutGrid = styled.div`
   & > ${Header}, & > ${Sidebar}, & > ${MainContent}, & > ${Footer} {
     /* all the child elements will be a grid item */
   }
+`;
+
+export const GlobalStyle = createGlobalStyle`
+    body {
+        font-family: 'Architects Daughter', sans-serif;
+    }
 `;

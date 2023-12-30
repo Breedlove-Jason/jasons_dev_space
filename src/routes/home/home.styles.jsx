@@ -1,31 +1,57 @@
 import styled from "styled-components";
+import "../../assets/css/styles.css";
 
-export const Header = styled.header`
-  grid-column: 1 / -1;
-  border: 5px solid red;
+export const Home = styled.section`
+  height: 70vh;
+  align-content: space-between;
+  margin-top: var(--mb-3);
+  padding-bottom: 0;
+  margin-bottom: var(--mb-2);
 `;
 
-export const Sidebar = styled.aside`
-  grid-column: 1 / 2;
-  border: 5px solid green;
+export const Section = styled.div`
+  padding: 2rem 0 4rem;
+  margin: auto;
+  min-height: 80vh;
 `;
 
-export const MainContent = styled.main`
-  grid-column: 2 / 4;
-  border: 5px solid blue;
+export const Container = styled.div`
+  margin-right: auto;
 `;
 
-export const Footer = styled.footer`
-  grid-column: 1 / -1;
-  border: 5px solid yellow;
-`;
-
-export const LayoutGrid = styled.div`
+export const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  border: 5px solid #61dafb;
-  & > ${Header}, & > ${Sidebar}, & > ${MainContent}, & > ${Footer} {
-    /* all the child elements will be a grid item */
-  }
+`;
+
+export const HomeContainer = styled.div`
+  row-gap: 5rem;
+`;
+
+export const HomeContent = styled.div`
+  padding-top: 2.5rem;
+  column-gap: 2rem;
+`;
+
+export const HomeData = styled.div`
+  grid-column: initial;
+`;
+
+export const HomeWelcome = styled.small`
+  text-align: center;
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+  padding: 1.5rem;
+`;
+
+export const SColor = styled.div`
+  color: var(--first-color);
+`;
+
+export const HomeTitle = styled.h3`
+  //margin-top: 2.5rem;
+  margin-bottom: 2rem;
+  font-family: "Architects Daughter", sans-serif;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-align: center;
 `;

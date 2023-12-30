@@ -1,4 +1,4 @@
-import { LayoutGrid, Header, Sidebar, MainContent, Footer } from "./app.styles";
+import { LayoutGrid, Header, Sidebar, MainContent, Footer } from "./App.styles";
 import Navigation from "./routes/navigation/navigation.component";
 import { Routes, Route } from "react-router-dom";
 import Home from "../src/routes/home/home.component";
@@ -6,8 +6,7 @@ import About from "../src/routes/about/about.component";
 import Projects from "../src/routes/projects/projects.component";
 import Contact from "../src/routes/contact/contact.component";
 import SocialIcons from "./components/social-media/social-media.component";
-// import Skills from "./components/skills/skills.component";
-
+import ContactButton from "./components/contact-button/contact-button.component";
 import "../src/assets/css/styles.css";
 import GlobalStyles from "./GlobalStyles";
 import "../src/assets/css/styles.css";
@@ -38,7 +37,11 @@ function App() {
           <SocialIcons />
         </Sidebar>
         <MainContent>
-          <Home />
+          <GlobalStyles />
+          <div className="home-contact-wrapper">
+            <Home />
+            <ContactButton />
+          </div>
         </MainContent>
         <Footer></Footer>
       </LayoutGrid>

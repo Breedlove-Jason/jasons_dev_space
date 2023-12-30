@@ -35,7 +35,7 @@ const GlobalStyles = createGlobalStyle`
     --roboto-font: "Roboto", sans-serif;
     --robotomono-font: "Roboto Mono", monospace;
     --bigfat-font: "Russo One", sans-serif;
-
+    --architect-font: "Architects Daughter", sans-serif;
     /* 1rem = 16px, .5rem = 8px */
     --big-font-size: 2rem;
     --h1-font-size: 1.5rem;

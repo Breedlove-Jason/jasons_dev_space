@@ -16,49 +16,52 @@ import {
   Footer,
   Sidebar,
   MainContent,
+  HomeTitle,
 } from "./home.styles";
 
 function Home() {
   return (
     <>
       {/*<Header>Header</Header>*/}
-      <section className="home section" id="home">
-        <div className="home__container container grid">
-          <div className="home__content grid">
-            <div className="home__data">
-              <small className="home__welcome s-color">
-                {" "}
-                Welcome to my Portfolio Website!{" "}
-              </small>
-              <h1 className="home__title"> Hey I'm </h1>
-              <Typewriter
-                wordsList={[
-                  "Jason Breedlove",
-                  "Combat Soldier",
-                  "Computer Programmer",
-                  "Full-Stack Developer",
-                  "Designer",
-                  "Creator",
-                ]}
-              />
-              <h3 className="home__subtitle" id="home-bio">
-                A Full-Stack Developer enthusiastic about technology and
-                software development. Once a military Sergeant who fought with
-                valor during the Iraq war, now a computer programmer.
-              </h3>
-              {/*<ContactButton />*/}
-              {/*<Experience />*/}
-              {/*<ScrollDownIcon />*/}
-              {/*<About />*/}
-              {/*<Skills />*/}
-            </div>
-            {/*<Qualifications />*/}
-            {/*<div className="home__social"></div>*/}
-            {/*<SocialIcons />*/}
-          </div>
-        </div>
-        <BackToTop />
-      </section>
+      {/*<section className="home section" id="home">*/}
+      {/*  <div className="home__container container grid">*/}
+      {/*    <div className="home__content grid">*/}
+      {/*<div className="home__data">*/}
+      <small className="home__welcome s-color">
+        {" "}
+        Welcome to my Portfolio Website!{" "}
+      </small>
+      <h1 className="home__title"> Hey I'm </h1>
+      <Typewriter
+        wordsList={[
+          "Jason Breedlove",
+          "Combat Soldier",
+          "Computer Programmer",
+          "Full-Stack Developer",
+          "Designer",
+          "Creator",
+        ]}
+      />
+      <HomeTitle>
+        {/*<h3 className="home__subtitle" id="home-bio">*/}A Full-Stack
+        Developer enthusiastic about technology and software development. Once a
+        military Sergeant who fought with valor during the Iraq war, now a
+        computer programmer.
+        {/*</h3>*/}
+      </HomeTitle>
+      {/*<ContactButton />*/}
+      {/*<Experience />*/}
+      {/*<ScrollDownIcon />*/}
+      {/*<About />*/}
+      {/*<Skills />*/}
+      {/*</div>*/}
+      {/*<Qualifications />*/}
+      {/*<div className="home__social"></div>*/}
+      {/*<SocialIcons />*/}
+      {/*  </div>*/}
+      {/*</div>*/}
+      <BackToTop />
+      {/*</section>*/}
     </>
   );
 }

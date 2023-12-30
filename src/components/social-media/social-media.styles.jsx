@@ -13,9 +13,9 @@ export const SocialContainer = styled.div`
 `;
 
 export const StyledLinkedInIcon = styled(LinkedInIcon)`
-  color: purple; // Change the color to purple
+  color: purple;
 `;
 
 export const StyledGitHubIcon = styled(GitHubIcon)`
-  color: purple; // Change the color to purple
+  color: purple;
 `;
