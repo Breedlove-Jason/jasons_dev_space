@@ -11,11 +11,10 @@ import Qualifications from "../../components/qualifications/qualifications.compo
 // import "../../assets/css/styles.css";
 
 import {
-  LayoutGrid,
-  Header,
-  Footer,
-  Sidebar,
-  MainContent,
+  HomeContainer,
+  HomeContent,
+  HomeData,
+  HomeWelcome,
   HomeTitle,
 } from "./home.styles";
 
@@ -27,28 +26,26 @@ function Home() {
       {/*  <div className="home__container container grid">*/}
       {/*    <div className="home__content grid">*/}
       {/*<div className="home__data">*/}
-      <small className="home__welcome s-color">
-        {" "}
-        Welcome to my Portfolio Website!{" "}
-      </small>
-      <h1 className="home__title"> Hey I'm </h1>
+      {/*<small className="home__welcome s-color">*/}{" "}
+      <HomeWelcome>Welcome to my Portfolio Website! {/*</small>*/}</HomeWelcome>
+      <HomeTitle> Hey I'm </HomeTitle>
       <Typewriter
         wordsList={[
           "Jason Breedlove",
-          "Combat Soldier",
-          "Computer Programmer",
-          "Full-Stack Developer",
-          "Designer",
-          "Creator",
+          "A Combat Soldier",
+          "A Computer Programmer",
+          "A Full-Stack Developer",
+          "A Designer",
+          "A Creator",
         ]}
       />
-      <HomeTitle>
+      <HomeContent>
         {/*<h3 className="home__subtitle" id="home-bio">*/}A Full-Stack
         Developer enthusiastic about technology and software development. Once a
         military Sergeant who fought with valor during the Iraq war, now a
         computer programmer.
         {/*</h3>*/}
-      </HomeTitle>
+      </HomeContent>
       {/*<ContactButton />*/}
       {/*<Experience />*/}
       {/*<ScrollDownIcon />*/}

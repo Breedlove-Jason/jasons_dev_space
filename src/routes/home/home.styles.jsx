@@ -28,8 +28,10 @@ export const HomeContainer = styled.div`
 `;
 
 export const HomeContent = styled.div`
-  padding-top: 2.5rem;
-  column-gap: 2rem;
+  padding: 1.5rem 1rem;
+  font-family: "Architects Daughter", sans-serif;
+  font-size: 2rem;
+  //column-gap: 2rem;
 `;
 
 export const HomeData = styled.div`
@@ -38,7 +40,9 @@ export const HomeData = styled.div`
 
 export const HomeWelcome = styled.small`
   text-align: center;
-  font-size: var(--small-font-size);
+  //font-size: var(--small-font-size);
+  font-family: "Architects Daughter", sans-serif;
+  font-size: 1.5rem;
   color: var(--text-color);
   padding: 1.5rem;
 `;
@@ -49,9 +53,10 @@ export const SColor = styled.div`
 
 export const HomeTitle = styled.h3`
   //margin-top: 2.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   font-family: "Architects Daughter", sans-serif;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  font-size: 2.75rem;
+  //margin-left: 1rem;
+  //margin-right: 1rem;
   text-align: center;
 `;
