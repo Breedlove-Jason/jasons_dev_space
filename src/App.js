@@ -1,4 +1,11 @@
-import { LayoutGrid, Header, Sidebar, MainContent, Footer } from "./App.styles";
+import { Fragment } from "react";
+import {
+  LayoutGrid,
+  Header,
+  Sidebar,
+  MainContent,
+  FooterDiv,
+} from "./App.styles";
 import Navigation from "./routes/navigation/navigation.component";
 import { Routes, Route } from "react-router-dom";
 import Home from "../src/routes/home/home.component";
@@ -7,14 +14,14 @@ import Projects from "../src/routes/projects/projects.component";
 import Contact from "../src/routes/contact/contact.component";
 import SocialIcons from "./components/social-media/social-media.component";
 import ContactButton from "./components/contact-button/contact-button.component";
+import Footer from "./components/footer/footer.component.jsx";
 import "../src/assets/css/styles.css";
 import GlobalStyles from "./GlobalStyles";
 import "../src/assets/css/styles.css";
-import { Fragment } from "react";
 
 function App() {
   return (
-    <Fragment>
+    <>
       {/*<div>*/}
       {/*<GlobalStyles />*/}
       {/*<Navigation />*/}
@@ -43,18 +50,11 @@ function App() {
             <ContactButton />
           </div>
         </MainContent>
-        <Footer></Footer>
+        <FooterDiv>
+          <Footer />
+        </FooterDiv>
       </LayoutGrid>
-
-      {/*<div className="container">*/}
-      {/*  <Home />*/}
-      {/*  <ContactButton />*/}
-      {/*  <Experience />*/}
-      {/*  <SocialIcons />*/}
-      {/*  <ScrollDownIcon />*/}
-      {/*  <About />*/}
-      {/*</div>*/}
-    </Fragment>
+    </>
   );
 }
 

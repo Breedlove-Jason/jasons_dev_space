@@ -7,7 +7,7 @@ export const StyledButton = styled.a`
   align-items: center;
   padding: 1.5rem;
   border-radius: 0.5rem;
-  font-weight: 500;
+  font-weight: 700;
   cursor: pointer;
   transition: 0.3s;
 
@@ -21,7 +21,7 @@ export const StyledButton = styled.a`
 
   /* Styles for .button__icon */
   & .button__icon {
-    font-size: 1.25rem; /* Example size, adjust as needed */
+    font-size: 1.55rem; /* Example size, adjust as needed */
     margin-left: 0.5rem; /* Example margin, adjust as needed */
   }
 `;

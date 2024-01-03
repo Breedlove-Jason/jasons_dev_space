@@ -35,7 +35,7 @@ export const MainContent = styled.main`
   }
 `;
 
-export const Footer = styled.footer`
+export const FooterDiv = styled.footer`
   grid-column: 1 / -1;
   border: 5px solid yellow;
 `;
@@ -45,7 +45,7 @@ export const LayoutGrid = styled.div`
   grid-template-columns: 0.2fr 2.6fr 0.2fr; // Allocate less space to the Sidebar and more space to the MainContent
   gap: 20px;
   border: 5px solid #61dafb;
-  & > ${Header}, & > ${Sidebar}, & > ${MainContent}, & > ${Footer} {
+  & > ${Header}, & > ${Sidebar}, & > ${MainContent}, & > ${FooterDiv} {
     /* all the child elements will be a grid item */
   }
 `;

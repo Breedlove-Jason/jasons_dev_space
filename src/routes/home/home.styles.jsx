@@ -23,19 +23,11 @@ export const Grid = styled.div`
   display: grid;
 `;
 
-export const HomeContainer = styled.div`
-  row-gap: 5rem;
-`;
-
 export const HomeContent = styled.div`
   padding: 1.5rem 1rem;
   font-family: "Architects Daughter", sans-serif;
   font-size: 2rem;
   //column-gap: 2rem;
-`;
-
-export const HomeData = styled.div`
-  grid-column: initial;
 `;
 
 export const HomeWelcome = styled.small`
