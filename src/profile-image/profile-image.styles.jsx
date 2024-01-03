@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
 export const StyledContainer = styled.div`
-  display: block; /* Use block to fill the width of the container */
+  //display: block; /* Use block to fill the width of the container */
   text-align: center; /* Centers inline or inline-block elements horizontally */
+  position: absolute;
+  left: 0;
 `;
 
 export const StyledProfileImage = styled.img`

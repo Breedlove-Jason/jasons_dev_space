@@ -9,7 +9,7 @@ import {
 import Navigation from "./routes/navigation/navigation.component";
 import { Routes, Route } from "react-router-dom";
 import Home from "../src/routes/home/home.component";
-import About from "../src/routes/about/about.component";
+import ProfileImage from "./profile-image/profile-image.component";
 import Projects from "../src/routes/projects/projects.component";
 import Contact from "../src/routes/contact/contact.component";
 import SocialIcons from "./components/social-media/social-media.component";
@@ -48,6 +48,7 @@ function App() {
           <div className="home-contact-wrapper">
             <Home />
             <ContactButton />
+            <ProfileImage />
           </div>
         </MainContent>
         <FooterDiv>
