@@ -1,21 +1,19 @@
 import styled from "styled-components";
 import "../../assets/css/styles.css";
 
-export const StyledAbout = styled.section`
-  padding-top: 1rem;
-  position: relative;
-  padding-left: 2rem;
-  //margin-top: 7rem;
-  /* Placeholder if there's any direct style for .about */
-`;
+// export const StyledAbout = styled.section`
+//padding-top: 1rem;
+//position: relative;
+//padding-left: 2rem;
+//margin-top: 7rem;
+/* Placeholder if there's any direct style for .about */
+// `;
 
 export const StyledSectionTitle = styled.h2`
   font-size: 3rem;
-  font-family: "", sans-serif;
+  font-family: "Maven Pro", sans-serif;
   text-align: center;
-  padding-bottom: 50px;
-  padding-top: 50px;
-  margin-left: 0;
+  padding-top: 100px;
 `;
 
 export const StyledAboutContainer = styled.div`
@@ -29,7 +27,7 @@ export const StyledAboutContainer = styled.div`
 export const StyledAboutDescription = styled.p`
   width: 100%;
   max-width: 768px; /* Adjust as needed */
-  margin: auto auto 2.5rem auto;
+  //margin: auto auto 2.5rem auto;
   padding-top: 3rem;
   text-align: left;
   color: var(--text-color);

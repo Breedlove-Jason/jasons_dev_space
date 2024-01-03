@@ -10,20 +10,16 @@ export const StyledAwardsSection = styled.section`
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); // A softer shadow than the comments section
 `;
 
-export const StyledAward = styled.li`
+export const StyledAward = styled.p`
   background: #fff; // Keep the individual elements consistent with comments
-  margin: 0.5rem 0; // Slightly tighter spacing than the comments section
   padding: 1rem;
-  border-left: 4px solid #d2af67; // A gold-colored border for a hint of prestige
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); // Softer shadow for depth
-  list-style-type: none; // No bullet points
   font-style: italic; // Maintains consistency with the comments section
-  position: relative; // For positioning badge icons if you choose to add them
 `;
 export const StyledMedalsBanner = styled.img`
   width: 100%; /* Adjust width as needed */
   max-width: 400px; /* Max width to match the section width */
   height: auto; /* Keep aspect ratio */
-  margin-bottom: 1rem; /* Space between the image and the title */
+  padding-bottom: 10px;
 `;

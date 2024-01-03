@@ -13,7 +13,7 @@ export const FooterContainer = styled.footer`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  position: fixed;
+  position: sticky;
   bottom: 0;
   left: 0;
   right: 0;

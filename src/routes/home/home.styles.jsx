@@ -27,6 +27,7 @@ export const HomeContent = styled.div`
   padding: 1.5rem 1rem;
   font-family: "Architects Daughter", sans-serif;
   font-size: 2rem;
+  text-align: center;
   //column-gap: 2rem;
 `;
 
