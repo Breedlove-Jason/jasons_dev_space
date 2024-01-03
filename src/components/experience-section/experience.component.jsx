@@ -3,12 +3,13 @@ import {
   StyledExperienceContainer,
   StyledExperienceTitle,
   StyledExperienceName,
+  StyledExperienceHeader,
 } from "./experience.styles";
 
 const Experience = () => {
   return (
-    <Fragment>
-      {/*<div className="about__info">*/}
+    <>
+      <StyledExperienceHeader>Experience</StyledExperienceHeader>
       <StyledExperienceContainer>
         <div>
           <StyledExperienceTitle> 03+ </StyledExperienceTitle>
@@ -35,8 +36,7 @@ const Experience = () => {
           </StyledExperienceName>
         </div>
       </StyledExperienceContainer>
-      {/*</div>*/}
-    </Fragment>
+    </>
   );
 };
 

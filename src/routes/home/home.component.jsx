@@ -20,9 +20,9 @@ function Home() {
         ]}
       />
       <HomeContent>
-        Developer enthusiastic about technology and software development. Once a
-        military Sergeant who fought with valor during the Iraq war, now a
-        computer programmer.
+        Full-Stack Developer enthusiastic about technology and software
+        development. Once a military Sergeant who fought with valor during the
+        Iraq war, now a computer programmer.
       </HomeContent>
 
       <BackToTop />

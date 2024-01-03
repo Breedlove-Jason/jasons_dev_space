@@ -16,6 +16,7 @@ import SocialIcons from "./components/social-media/social-media.component";
 import ContactButton from "./components/contact-button/contact-button.component";
 import Footer from "./components/footer/footer.component.jsx";
 import About from "./components/about/about.component.jsx";
+import Experience from "./components/experience-section/experience.component";
 import "../src/assets/css/styles.css";
 import GlobalStyles from "./GlobalStyles";
 import "../src/assets/css/styles.css";
@@ -52,6 +53,7 @@ function App() {
             <ProfileImage />
           </div>
           <div>
+            <Experience />
             <About />
           </div>
         </MainContent>
