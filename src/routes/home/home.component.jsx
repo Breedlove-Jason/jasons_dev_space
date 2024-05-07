@@ -6,7 +6,8 @@ import Experience from "../../components/experience-section/experience.component
 import About from "../about/about.component";
 import Skills from "../../components/skills/skills.component";
 import BackToTop from "../../components/back-to-top/backToTopButton.component";
-import Qualifications from "../../components/qualifications/qualifications.component";
+// import Qualifications from "../../components/qualifications/qualifications.component";
+import Timeline from "../../components/timeline/timeline.component";
 import "../../assets/css/styles.css";
 
 function Home() {
@@ -65,7 +66,8 @@ function Home() {
               <ScrollDownIcon />
               <About />
               <Skills />
-              <Qualifications />
+              <Timeline />
+              {/*<Qualifications />*/}
             </div>
             <div className="home__social"></div>
             <SocialIcons />
