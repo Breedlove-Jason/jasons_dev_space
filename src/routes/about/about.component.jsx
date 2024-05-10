@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import "./about.styles";
 import ProfileImage from "../../profile-image/profile-image.component";
 import CommentsFromSuperiorsComponent from "../../components/supervisor-comments/comments-from-superiors.component";
-import AwardsAndDecorationsComponent from "../../components/awards-and-decorations/awards-and-decorations.component";
+// import AwardsAndDecorationsComponent from "../../components/awards-and-decorations/awards-and-decorations.component";
 import DownloadCV from "../../components/download-cv-button/download-cv.component";
 import "../../assets/css/styles.css";
 import {
@@ -39,7 +39,7 @@ const About = () => {
             solutions.
           </StyledAboutDescription>
           <CommentsFromSuperiorsComponent />
-          <AwardsAndDecorationsComponent />
+          {/*<AwardsAndDecorationsComponent />*/}
         </div>
       </StyledAbout>
 

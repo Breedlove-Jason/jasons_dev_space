@@ -1,0 +1,82 @@
+/*!* Portfolio Section *!*/
+/*.portfolio {*/
+/*    padding: 4rem 0;*/
+/*    background-color: #f9f9f9;*/
+/*}*/
+
+/*.section__title {*/
+/*    font-size: 2.5rem;*/
+/*    font-weight: bold;*/
+/*    margin-bottom: 1rem;*/
+/*    color: #333;*/
+/*}*/
+
+/*.section__subtitle {*/
+/*    font-size: 1.2rem;*/
+/*    color: #777;*/
+/*}*/
+
+/*.blog-slider {*/
+/*    margin-top: 2rem;*/
+/*    padding: 1.5rem;*/
+/*    background-color: #fff;*/
+/*    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);*/
+/*    border-radius: 10px;*/
+/*    overflow: hidden;*/
+/*}*/
+
+/*.blog-slider__item {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    gap: 30px;*/
+/*    padding: 20px;*/
+/*}*/
+
+/*.blog-slider__img {*/
+/*    flex: 0 0 40%;*/
+/*    padding: 10px;*/
+/*}*/
+
+/*.blog-slider__img img {*/
+/*    width: 100%;*/
+/*    border-radius: 10px;*/
+/*}*/
+
+/*.blog-slider__content {*/
+/*    flex: 1;*/
+/*    padding: 0 20px;*/
+/*}*/
+
+/*.blog-slider__title {*/
+/*    font-size: 1.8rem;*/
+/*    color: #444;*/
+/*    margin-bottom: 10px;*/
+/*}*/
+
+/*.blog-slider__code {*/
+/*    font-size: 1rem;*/
+/*    color: #999;*/
+/*    margin-bottom: 5px;*/
+/*}*/
+
+/*.blog-slider__text {*/
+/*    font-size: 1.2rem;*/
+/*    color: #666;*/
+/*    line-height: 1.6;*/
+/*}*/
+
+/*!* Responsive adjustments *!*/
+/*@media (max-width: 768px) {*/
+/*    .blog-slider__item {*/
+/*        flex-direction: column;*/
+/*    }*/
+
+/*    .blog-slider__img {*/
+/*        flex: none;*/
+/*        width: 80%;*/
+/*        margin: 0 auto;*/
+/*    }*/
+/*}*/
+
+
+/*!* Other classes for titles, text, button - adjust as needed *!*/

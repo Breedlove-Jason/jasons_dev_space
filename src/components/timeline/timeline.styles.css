@@ -17,7 +17,8 @@
 
 .vertical-timeline-element-title {
     color: rgb(33, 150, 243);
-    background: linear-gradient(40deg, #ea00ff, #ea00ff, #03d5ff, #03d5ff);
+    /*background: linear-gradient(40deg, #ea00ff, #ea00ff, #03d5ff, #03d5ff);*/
+    background: linear-gradient(40deg, #800080, #800080, #000080, #000080); /* Gradient from dark purple to dark blue */
     font-weight: bold;
 }
 
@@ -27,8 +28,8 @@
 }
 
 .vertical-timeline-element-details {
-    color: rgb(33, 150, 243);
-    background: linear-gradient(40deg, #ea00ff, #ea00ff, #03d5ff, #03d5ff);
+    color: rgb(0, 0, 128); /* Dark blue */
+    background: linear-gradient(40deg, #800080, #800080, #000080, #000080); /* Gradient from dark purple to dark blue */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
@@ -59,4 +60,21 @@
 .vertical-timeline-element-icon {
     margin-top: 10px; /* Adjust this value as needed */
     box-shadow: none !important;
+}
+
+.vertical-timeline::before {
+    left: 45px; /* Might need adjustment */
+}
+
+.vertical-timeline-element--work.vertical-timeline-element--left .vertical-timeline-element-icon {
+    margin-left: -25px;  /* Half of the icon width (assuming 50px) */
+}
+
+.timeline-title {
+    font-size: 3rem;
+    font-family: "", sans-serif;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    margin-left: 0;
 }

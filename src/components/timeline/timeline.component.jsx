@@ -15,7 +15,6 @@ import { ReactComponent as Html5Icon } from "../../assets/images/html5.svg";
 import { ReactComponent as JavascriptIcon } from "../../assets/images/javascript.svg";
 import { ReactComponent as LinuxIcon } from "../../assets/images/linux.svg";
 import { ReactComponent as ReactIcon } from "../../assets/images/react.svg";
-import { ReactComponent as FlaskIcon } from "../../assets/images/flask.svg";
 import { ReactComponent as WebDevIcon } from "../../assets/images/html5.svg";
 
 const icons = {
@@ -33,6 +32,7 @@ const icons = {
 const Timeline = () => {
   return (
     <div>
+      <h1 className="timeline-title">Skills</h1>
       <VerticalTimeline>
         {timelineData.map((section, index) =>
           (section.timelineItems || section.items).map(

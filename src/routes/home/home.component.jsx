@@ -4,9 +4,11 @@ import ScrollDownIcon from "../../components/scroll-down-icon/scroll-down-icon.c
 import ContactButton from "../../components/contact-button/contact-button.component";
 import Experience from "../../components/experience-section/experience.component";
 import About from "../about/about.component";
-import Skills from "../../components/skills/skills.component";
+// import Skills from "../../components/skills/skills.component";
 import BackToTop from "../../components/back-to-top/backToTopButton.component";
+// import PortfolioItem from "../../components/portfolio-item/portfolio-item.component";
 // import Qualifications from "../../components/qualifications/qualifications.component";
+import Portfolio from "../portfolio/portfolio.component";
 import Timeline from "../../components/timeline/timeline.component";
 import "../../assets/css/styles.css";
 
@@ -59,13 +61,21 @@ function Home() {
               <h3 className="home__subtitle" id="home-bio">
                 A Full-Stack Developer enthusiastic about technology and
                 software development. Once a military Sergeant who fought with
-                valor during the Iraq war, now a computer programmer.
+                valor during the Iraq war, now a computer programmer.{" "}
+                <i>
+                  Awarded the Army Commendation Medal with Valor for bravery in
+                  action in the Iraq War, the Presidential Unit Citation, the
+                  Combat Action Badge, the Army Achievement Medal and many
+                  others.
+                </i>
               </h3>
               <ContactButton />
               <Experience />
               <ScrollDownIcon />
               <About />
-              <Skills />
+              {/*<Skills />*/}
+              {/*<PortfolioItem />*/}
+              <Portfolio />
               <Timeline />
               {/*<Qualifications />*/}
             </div>

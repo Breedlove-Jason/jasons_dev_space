@@ -1,6 +1,7 @@
 import React from "react";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import "./social-media.style.css";
 
 const SocialIcons = () => {
   return (
