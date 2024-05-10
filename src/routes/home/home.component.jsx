@@ -8,6 +8,9 @@ import About from "../about/about.component";
 import BackToTop from "../../components/back-to-top/backToTopButton.component";
 // import PortfolioItem from "../../components/portfolio-item/portfolio-item.component";
 // import Qualifications from "../../components/qualifications/qualifications.component";
+import ContactForm from "../../components/contact-form/contact.component";
+
+import CarouselProjects from "../../components/carousel/carousel.component";
 import Portfolio from "../portfolio/portfolio.component";
 import Timeline from "../../components/timeline/timeline.component";
 import "../../assets/css/styles.css";
@@ -74,8 +77,8 @@ function Home() {
               <ScrollDownIcon />
               <About />
               {/*<Skills />*/}
-              {/*<PortfolioItem />*/}
-              <Portfolio />
+              <CarouselProjects />
+              <ContactForm />
               <Timeline />
               {/*<Qualifications />*/}
             </div>
