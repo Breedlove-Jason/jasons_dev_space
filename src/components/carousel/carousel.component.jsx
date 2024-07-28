@@ -1,76 +1,51 @@
-import { useState } from "react";
-import Carousel from "react-bootstrap/Carousel";
-import "./carousel.styles.css";
-import netflixPreview from "../../assets/images/netflix-preview.png";
-// import image1 from "../../assets/images/image1.jpg";
-import React from "react";
+import React from 'react';
+import {
+  MDBCarousel,
+  MDBCarouselItem,
+  MDBCarouselCaption,
+} from 'mdb-react-ui-kit';
+import './carousel.styles.css';
 
-// Update the CarouselProjects component
-// Update the CarouselProjects component
-// Ensure the Carousel.Item has the className "carousel-item"
-const CarouselProjects = () => {
-  const [index, setIndex] = useState(0);
-
-  const handleSelect = (selectedIndex, e) => {
-    setIndex(selectedIndex);
-  };
-
+export default function Carousel() {
   return (
-    <div className="carousel">
-      <Carousel activeIndex={index} onSelect={handleSelect}>
-        <Carousel.Item className="carousel-item">
+    <div className="carousel-container">
+      <MDBCarousel showControls showIndicators>
+        <MDBCarouselItem itemId={1}>
           <img
+            src="https://mdbootstrap.com/img/new/slides/041.jpg"
             className="d-block w-100"
-            src={netflixPreview}
-            alt="Netflix Clone"
+            alt="..."
           />
-          <Carousel.Caption>
-            <h3>Netflix Clone</h3>
-            <p>
-              The Netflix clone project is a full-featured streaming platform
-              that includes account management powered by Firebase, allowing
-              users to create, manage, and secure their profiles effortlessly.
-              The site integrates Stripe for seamless and secure payment
-              processing, enabling users to subscribe to different plans with
-              ease.
-              <a
-                href="https://netflix-clone-portfolio-52780fe750c8.herokuapp.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="preview-button"
-              >
-                Preview Here
-              </a>
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item className="carousel-item">
+          <MDBCarouselCaption>
+            <h5>First slide label</h5>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </MDBCarouselCaption>
+        </MDBCarouselItem>
+        <MDBCarouselItem itemId={2}>
           <img
+            src="https://mdbootstrap.com/img/new/slides/042.jpg"
             className="d-block w-100"
-            src={"https://placehold.co/600x400"}
-            alt="Second slide"
+            alt="..."
           />
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
+          <MDBCarouselCaption>
+            <h5>Second slide label</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item className="carousel-item">
+          </MDBCarouselCaption>
+        </MDBCarouselItem>
+        <MDBCarouselItem itemId={3}>
           <img
+            src="https://mdbootstrap.com/img/new/slides/043.jpg"
             className="d-block w-100"
-            src={"https://placehold.co/600x400"}
-            alt="Third slide"
+            alt="..."
           />
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
+          <MDBCarouselCaption>
+            <h5>Third slide label</h5>
             <p>
               Praesent commodo cursus magna, vel scelerisque nisl consectetur.
             </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
+          </MDBCarouselCaption>
+        </MDBCarouselItem>
+      </MDBCarousel>
     </div>
   );
-};
-
-export default CarouselProjects;
+}

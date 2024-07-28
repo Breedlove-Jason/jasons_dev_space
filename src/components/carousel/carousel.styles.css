@@ -2,16 +2,18 @@
 .carousel-item .carousel-caption {
     display: none;
 }
-/* Update carousel.styles.css */
+/* Ensure the carousel is centered */
 .carousel {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    left: 5%;
 }
 
 .carousel-item {
-    width: 568px;
+    width: 100%;
+    max-width: 568px; /* Adjust the max-width as needed */
     margin: 0 auto;
 }
 
