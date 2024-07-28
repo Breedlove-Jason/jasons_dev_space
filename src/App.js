@@ -1,15 +1,17 @@
-import Navigation from "./routes/navigation/navigation.component";
-import { Routes, Route } from "react-router-dom";
-import Home from "../src/routes/home/home.component";
-import About from "../src/routes/about/about.component";
-import Projects from "../src/routes/projects/projects.component";
-import Contact from "../src/routes/contact/contact.component";
+import Navigation from './routes/navigation/navigation.component';
+import { Routes, Route } from 'react-router-dom';
+import Home from '../src/routes/home/home.component';
+import About from '../src/routes/about/about.component';
+import Projects from '../src/routes/projects/projects.component';
+import Contact from '../src/routes/contact/contact.component';
+import Carousel from './components/carousel/carousel.component';
 // import Skills from "./components/skills/skills.component";
-import "../src/assets/css/styles.css";
+import '../src/assets/css/styles.css';
 
-import GlobalStyles from "./GlobalStyles";
-import "../src/assets/css/styles.css";
-import { Fragment } from "react";
+import GlobalStyles from './GlobalStyles';
+import '../src/assets/css/styles.css';
+import { Fragment } from 'react';
+// import { Carousel } from 'react-bootstrap';
 
 function App() {
   return (
@@ -34,6 +36,7 @@ function App() {
       {/*  <SocialIcons />*/}
       {/*  <ScrollDownIcon />*/}
       {/*  <About />*/}
+      <Carousel />
       {/*</div>*/}
     </Fragment>
   );

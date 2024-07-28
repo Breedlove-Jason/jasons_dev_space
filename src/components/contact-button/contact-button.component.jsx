@@ -1,18 +1,15 @@
 import React from 'react';
-import { Link } from "react-router-dom";
-import {StyledButton} from "./contact-button.styles";
+import { Link } from 'react-router-dom';
+import { StyledButton } from './contact-button.styles';
 
-const ContactButton = () => {
-    return (
-        <div>
-            <Link to={"contact"}>
-                <StyledButton href="#contact">
-                    Contact Me
-                    <i className="uil uil-message button__icon"></i>
-                </StyledButton>
-            </Link>
-        </div>
-    );
+const ContactButton = ({ link }) => {
+  return (
+    <div className="contact-button">
+      <a href={link} className="button">
+        Contact Me
+      </a>
+    </div>
+  );
 };
 
 export default ContactButton;

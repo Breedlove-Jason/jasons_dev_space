@@ -1,8 +1,10 @@
-/* Update carousel.styles.css */
-.carousel-item .carousel-caption {
-    display: none;
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
-/* Update carousel.styles.css */
+
 .carousel {
     display: flex;
     justify-content: center;
@@ -13,27 +15,4 @@
 .carousel-item {
     width: 568px;
     margin: 0 auto;
-}
-
-.carousel-item:hover .carousel-caption {
-    display: block;
-}
-
-.carousel-item:hover img {
-    filter: blur(5px);
-}
-
-.preview-button {
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    margin-top: 10px;
-}
-
-.preview-button:hover {
-    background-color: #0056b3;
 }
