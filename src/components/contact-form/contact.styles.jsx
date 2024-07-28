@@ -64,7 +64,8 @@ export const Message = styled.p`
 
 export const ContactInfoWrapper = styled.div`
   max-width: 568px;
-  margin: 2rem auto 0;
+  margin-left: 30px;
+  //margin: 2rem auto 0;
   display: flex;
   justify-content: space-between;
   background-color: #f4f4f4;
@@ -78,7 +79,7 @@ export const ContactInfoBlock = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  color: #6a1b9a; // A shade of purple
+  color: #6a1b9a;
 `;
 
 export const Icon = styled(FontAwesomeIcon)`
