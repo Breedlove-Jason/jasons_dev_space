@@ -11,6 +11,7 @@ import calculatorPreview from "../../assets/images/calculator-preview.png";
 import pacmanPreview from "../../assets/images/pacman-preview.png";
 import pigGamePreview from "../../assets/images/pig-game-preview.png";
 import flaskBlogPreview from "../../assets/images/blog_flask_preview.png";
+import ballPitMatterJS from "../../assets/images/ball-pit-preview.png";
 
 export default function Carousel() {
   return (
@@ -151,19 +152,17 @@ export default function Carousel() {
           </MDBCarouselCaption>
         </MDBCarouselItem>
         <MDBCarouselItem itemId={5}>
-          <img src={flaskBlogPreview} className="d-block w-100" alt="..." />
+          <img src={ballPitMatterJS} className="d-block w-100" alt="..." />
           <MDBCarouselCaption>
             <h4>Flask Blog</h4>
             <p style={{ fontWeight: "bold" }}>
-              A comprehensive Flask-based blog application featuring user
-              registration, login, logout, and posting capabilities, along with
-              an admin account for managing content. This project showcases my
-              skills in backend development, database integration, and user
-              authentication, providing a robust and scalable web application
-              solution.
+              A simple interactive simulation created using the Matter.js
+              physics engine. Shapes of various colors and types are randomly
+              generated within a confined space, and users can interact with
+              them using the mouse.
             </p>
             <a
-              href="https://flask-blog-dc30c1201a7c.herokuapp.com/"
+              href="https://matter-js-ball-pit.netlify.app"
               target="_blank"
               rel="noopener noreferrer"
               className="preview-button"
