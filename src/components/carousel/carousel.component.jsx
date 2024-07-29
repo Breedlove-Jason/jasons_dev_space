@@ -1,19 +1,19 @@
-import React from 'react';
+import React from "react";
 import {
   MDBCarousel,
   MDBCarouselItem,
   MDBCarouselCaption,
-} from 'mdb-react-ui-kit';
-import './carousel.styles.css';
-import netflixPreview from '../../assets/images/netflix-preview.png';
-import crownClothingPreview from '../../assets/images/crown-clothing-preview.png';
-import calculatorPreview from '../../assets/images/calculator-preview.png';
-import pacmanPreview from '../../assets/images/pacman-preview.png';
-import pigGamePreview from '../../assets/images/pig-game-preview.png';
-import flaskBlogPreview from '../../assets/images/blog_flask_preview.png';
-import ballPitMatterJS from '../../assets/images/ball-pit-preview.png';
-import movieFightJS from '../../assets/images/movie-fight-preview.png';
-import monsterRolodex from '../../assets/images/monster-rolodex.png';
+} from "mdb-react-ui-kit";
+import "./carousel.styles.css";
+import netflixPreview from "../../assets/images/netflix-preview.png";
+import crownClothingPreview from "../../assets/images/crown-clothing-preview.png";
+import calculatorPreview from "../../assets/images/calculator-preview.png";
+import pacmanPreview from "../../assets/images/pacman-preview.png";
+import pigGamePreview from "../../assets/images/pig-game-preview.png";
+import flaskBlogPreview from "../../assets/images/blog_flask_preview.png";
+import ballPitMatterJS from "../../assets/images/ball-pit-preview.png";
+import movieFightJS from "../../assets/images/movie-fight-preview.png";
+import monsterRolodex from "../../assets/images/monster-rolodex.png";
 
 export default function Carousel() {
   return (
@@ -23,7 +23,7 @@ export default function Carousel() {
           <img src={netflixPreview} className="d-block w-100" alt="..." />
           <MDBCarouselCaption>
             <h4>Netflix Clone using React</h4>
-            <p style={{ fontWeight: 'bold' }}>
+            <p style={{ fontWeight: "bold" }}>
               The Netflix clone project is a full-featured streaming platform
               that includes account management powered by Firebase, allowing
               users to create, manage, and secure their profiles effortlessly.
@@ -45,7 +45,7 @@ export default function Carousel() {
           <img src={crownClothingPreview} className="d-block w-100" alt="..." />
           <MDBCarouselCaption>
             <h4>Crown Clothing using React</h4>
-            <p style={{ fontWeight: 'bold' }}>
+            <p style={{ fontWeight: "bold" }}>
               The Crown Clothing E-Shop is a modern e-commerce platform built
               with React and Redux, featuring a seamless user sign-up and
               sign-in process. It provides a smooth checkout experience,
@@ -68,7 +68,7 @@ export default function Carousel() {
           <img src={pacmanPreview} className="d-block w-100" alt="..." />
           <MDBCarouselCaption>
             <h4>Pacman JS</h4>
-            <p style={{ fontWeight: 'bold' }}>
+            <p style={{ fontWeight: "bold" }}>
               The JavaScript Pacman Game is an engaging and interactive web
               application that replicates the classic arcade experience.
               Developed with JavaScript, HTML, and CSS, it features smooth
@@ -90,7 +90,7 @@ export default function Carousel() {
           <img src={calculatorPreview} className="d-block w-100" alt="..." />
           <MDBCarouselCaption>
             <h4>Calculator JS</h4>
-            <p style={{ fontWeight: 'bold' }}>
+            <p style={{ fontWeight: "bold" }}>
               The JavaScript Calculator App is a sleek and responsive web
               application that performs basic arithmetic operations with ease.
               Built with vanilla JavaScript, HTML, and CSS, it features a
@@ -112,7 +112,7 @@ export default function Carousel() {
           <img src={pigGamePreview} className="d-block w-100" alt="..." />
           <MDBCarouselCaption>
             <h4>Pig Game JS</h4>
-            <p style={{ fontSize: '15px', fontWeight: 'bold' }}>
+            <p style={{ fontSize: "15px", fontWeight: "bold" }}>
               A fun and interactive implementation of the classic Pig Dice Game,
               where two players compete to reach 100 points first. Players take
               turns rolling a die and accumulating points, but must decide
@@ -135,7 +135,7 @@ export default function Carousel() {
           <img src={flaskBlogPreview} className="d-block w-100" alt="..." />
           <MDBCarouselCaption>
             <h4>Blog using Flask & SQL</h4>
-            <p style={{ fontWeight: 'bold' }}>
+            <p style={{ fontWeight: "bold" }}>
               A comprehensive Flask-based blog application featuring user
               registration, login, logout, and posting capabilities, along with
               an admin account for managing content. This project showcases my
@@ -157,7 +157,7 @@ export default function Carousel() {
           <img src={ballPitMatterJS} className="d-block w-100" alt="..." />
           <MDBCarouselCaption>
             <h4>Physics with Matter JS</h4>
-            <p style={{ fontWeight: 'bold' }}>
+            <p style={{ fontWeight: "bold" }}>
               A simple interactive simulation created using the Matter.js
               physics engine. Shapes of various colors and types are randomly
               generated within a confined space, and users can interact with
@@ -177,7 +177,7 @@ export default function Carousel() {
           <img src={movieFightJS} className="d-block w-100" alt="..." />
           <MDBCarouselCaption>
             <h4>Movie Fight JS</h4>
-            <p style={{ fontWeight: 'bold' }}>
+            <p style={{ fontWeight: "bold" }}>
               A movie comparison app leveraging the OMDB API to fetch and
               compare detailed movie information, allowing users to search for
               movies and visually compare their attributes such as box office
@@ -196,8 +196,8 @@ export default function Carousel() {
         <MDBCarouselItem itemId={8}>
           <img src={monsterRolodex} className="d-block w-100" alt="..." />
           <MDBCarouselCaption>
-            <h4 style={{ color: 'black' }}>Monster's Rolodex using React</h4>
-            <p style={{ color: 'black', fontWeight: 'bold' }}>
+            <h4 style={{ color: "black" }}>Monster's Rolodex using React</h4>
+            <p style={{ color: "black", fontWeight: "bold" }}>
               A React-based Monster Rolodex app that fetches and displays data
               from an API, allowing users to search and view details of various
               monsters in an interactive and visually appealing card format.
