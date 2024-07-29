@@ -14,6 +14,8 @@ import flaskBlogPreview from "../../assets/images/blog_flask_preview.png";
 import ballPitMatterJS from "../../assets/images/ball-pit-preview.png";
 import movieFightJS from "../../assets/images/movie-fight-preview.png";
 import monsterRolodex from "../../assets/images/monster-rolodex.png";
+import expenseTrackerReact from "../../assets/images/react-expense-tracker.png";
+import todoManagerJS from "../../assets/images/toDoListManager-preview.png";
 
 export default function Carousel() {
   return (
@@ -204,6 +206,52 @@ export default function Carousel() {
             </p>
             <a
               href="https://monsters-rolodex-in-react.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="preview-button"
+            >
+              Preview Here
+            </a>
+          </MDBCarouselCaption>
+        </MDBCarouselItem>
+        <MDBCarouselItem itemId={9}>
+          <img src={expenseTrackerReact} className="d-block w-100" alt="..." />
+          <MDBCarouselCaption>
+            <h4>Expense Tracker using React</h4>
+            <p style={{ fontWeight: "bold" }}>
+              The React Expense Manager is a web application designed to help
+              users track and manage their personal finances effortlessly. Built
+              with React, it features an intuitive interface for adding,
+              editing, and categorizing expenses, providing insightful
+              visualizations and summaries to facilitate better financial
+              decision-making.
+            </p>
+            <a
+              href="https://expenses-tracker-in-react.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="preview-button"
+            >
+              Preview Here
+            </a>
+          </MDBCarouselCaption>
+        </MDBCarouselItem>
+        <MDBCarouselItem itemId={9}>
+          <img src={todoManagerJS} className="d-block w-100" alt="..." />
+          <MDBCarouselCaption>
+            <h4>ToDo Manager JS</h4>
+            <p style={{ fontWeight: "bold" }}>
+              The ToDo List Manager is a feature-rich web application designed
+              to help users efficiently manage their tasks. It allows users to
+              add, edit, and delete tasks, set due dates, assign priority
+              levels, and filter tasks by status. The application also includes
+              a theme toggle for a customizable user experience, and it
+              leverages Bootstrap for a modern and responsive design. This
+              project showcases advanced JavaScript, DOM manipulation, and CSS
+              styling skills.
+            </p>
+            <a
+              href="https://todo-app-manager-js.netlify.app"
               target="_blank"
               rel="noopener noreferrer"
               className="preview-button"
