@@ -260,6 +260,26 @@ export default function Carousel() {
             </a>
           </MDBCarouselCaption>
         </MDBCarouselItem>
+        <MDBCarouselItem itemId={10}>
+          <img src={todoManagerJS} className="d-block w-100" alt="..." />
+          <MDBCarouselCaption>
+            <h4>Pong Python</h4>
+            <p style={{ fontWeight: "bold" }}>
+              Developed a classic Pong game using Python's Turtle module. This
+              project showcases game development fundamentals, including
+              collision detection, scoring, and AI paddle movement, wrapped in a
+              sleek and responsive interface.
+            </p>
+            <a
+              href="https://github.com/Breedlove-Jason/pong.git"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="preview-button"
+            >
+              Code Here
+            </a>
+          </MDBCarouselCaption>
+        </MDBCarouselItem>
       </MDBCarousel>
     </div>
   );
